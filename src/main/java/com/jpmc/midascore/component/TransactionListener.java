@@ -66,7 +66,7 @@ public class TransactionListener {
         TransactionRecord record =
                 new TransactionRecord(sender, recipient, transaction.getAmount());
 
-        git remote -v
+
         databaseConduit.saveTransaction(record);
     }
 }
